@@ -1,0 +1,34 @@
+﻿<Window x:Class="EDSLprototype.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDSLprototype"
+        mc:Ignorable="d"
+        Title="EDSL System" Height="462.698" Width="877.248" Foreground="Black" Background="LightGray">
+    <Grid>
+        <GridSplitter HorizontalAlignment="Left" Width="176" Background="Gray" Margin="10,10,0,10"/>
+        <TextBlock FontWeight="Bold" HorizontalAlignment="Left" Margin="195,10,0,0" TextWrapping="Wrap" Text="Eastern District Soccer League" FontSize="28" VerticalAlignment="Top" RenderTransformOrigin="-2.986,-0.957" Height="37" />
+        <Separator RenderTransformOrigin="0.493,0.318" Margin="195,2,10,332"/>
+        <Separator Margin="25,-133,699,137" RenderTransformOrigin="0.515,0.424" Background="DarkGray" />
+        <Button Content="Season" HorizontalAlignment="Left" Margin="25,26,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick1"/>
+        <Button Content="Results" HorizontalAlignment="Left" Margin="25,51,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick2"/>
+        <Button Content="Reports" HorizontalAlignment="Left" Margin="25,89,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick3" />
+        <Button Content="Clubs" HorizontalAlignment="Left" Margin="25,114,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick4"/>
+        <Button Content="Teams" HorizontalAlignment="Left" Margin="25,139,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick5"/>
+        <Button Content="Players" HorizontalAlignment="Left" Margin="25,164,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick6"/>
+        <ComboBox IsReadOnly="True" IsEditable="True" Text="Select Season" HorizontalAlignment="Left" Margin="195,89,0,0" VerticalAlignment="Top" Height="23" Width="163" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBoxItem Content="2019 Season"></ComboBoxItem>
+        <ComboBoxItem Content="2018 Season"></ComboBoxItem>
+        <ComboBoxItem Content="2017 Season"></ComboBoxItem>
+        <ComboBoxItem Content="2016 Season"></ComboBoxItem>
+        </ComboBox>
+
+        <TextBox Name="CreateSeason" HorizontalAlignment="Left" Height="23" Margin="195,62,0,0" TextWrapping="Wrap" Text="Create Season" VerticalAlignment="Top" Width="163"/>
+        <Button Content="Ok" Height="23" HorizontalAlignment="Left" Margin="363,62,0,0" VerticalAlignment="Top" Width="43"/>
+        <Button Content="Ok" Height="23" HorizontalAlignment="Left" Margin="363,89,0,0" VerticalAlignment="Top" Width="43"/>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
+        
+
+    </Grid>
+</Window>
