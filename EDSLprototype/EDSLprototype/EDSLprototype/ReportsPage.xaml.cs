@@ -25,6 +25,28 @@ namespace EDSLprototype
             InitializeComponent();
         }
 
+       
+        private void viewDraw(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ReportsPage();
+        }
+
+        private void buttonclickDraw(object sender, RoutedEventArgs e)
+        {
+            Draw.Visibility = Visibility.Visible;
+            DrawHeader.Visibility = Visibility.Visible;
+            
+        }
+
+
+        private void buttonClickLadder(object sender, RoutedEventArgs e)
+        {
+            Ladder.Visibility = Visibility.Visible;
+            LadderHeader.Visibility = Visibility.Visible;
+            Cover.Visibility = Visibility.Visible;
+            Cover2.Visibility = Visibility.Visible;
+        }
+
         private void ComboBox_SelectionChanged1(object sender, SelectionChangedEventArgs e)
         {
 

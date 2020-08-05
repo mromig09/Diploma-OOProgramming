@@ -17,18 +17,58 @@
         <Button Content="Clubs" HorizontalAlignment="Left" Margin="25,114,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick4"/>
         <Button Content="Teams" HorizontalAlignment="Left" Margin="25,139,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick5"/>
         <Button Content="Players" HorizontalAlignment="Left" Margin="25,164,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="1.386,0.382" Click="ButtonClick6"/>
-        <ComboBox IsReadOnly="True" IsEditable="True" Text="Select Season" HorizontalAlignment="Left" Margin="195,89,0,0" VerticalAlignment="Top" Height="23" Width="163" SelectionChanged="ComboBox_SelectionChanged">
-        <ComboBoxItem Content="2019 Season"></ComboBoxItem>
-        <ComboBoxItem Content="2018 Season"></ComboBoxItem>
-        <ComboBoxItem Content="2017 Season"></ComboBoxItem>
-        <ComboBoxItem Content="2016 Season"></ComboBoxItem>
+        <ComboBox IsReadOnly="True" IsEditable="True" Text="Select Existing Season" HorizontalAlignment="Left" Margin="195,89,0,0" VerticalAlignment="Top" Height="23" Width="163" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="2019 Season"></ComboBoxItem>
+            <ComboBoxItem Content="2018 Season"></ComboBoxItem>
+            <ComboBoxItem Content="2017 Season"></ComboBoxItem>
+            <ComboBoxItem Content="2016 Season"></ComboBoxItem>
         </ComboBox>
 
-        <TextBox Name="CreateSeason" HorizontalAlignment="Left" Height="23" Margin="195,62,0,0" TextWrapping="Wrap" Text="Create Season" VerticalAlignment="Top" Width="163"/>
-        <Button Content="Ok" Height="23" HorizontalAlignment="Left" Margin="363,62,0,0" VerticalAlignment="Top" Width="43"/>
-        <Button Content="Ok" Height="23" HorizontalAlignment="Left" Margin="363,89,0,0" VerticalAlignment="Top" Width="43"/>
-        <Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
+        <TextBox Name="CreateSeason" HorizontalAlignment="Left" Height="23" Margin="195,62,0,0" TextWrapping="Wrap" Text="Create SeasonID" VerticalAlignment="Top" Width="163" MouseDoubleClick="EmptyText"/>
+        <Button Content="Ok" Height="23" HorizontalAlignment="Left" Margin="363,62,0,0" VerticalAlignment="Top" Width="43" Click="btnClickOk1"/>
+
+        <Button Content="Ok" Height="23" HorizontalAlignment="Left" Margin="363,89,0,0" VerticalAlignment="Top" Width="43" Click="btnClickOk2"/>
+
+        <Button Name="createDraw" Content="Create Draw" HorizontalAlignment="Left" Margin="783,352,0,0" VerticalAlignment="Top" Width="76" Visibility="Hidden"/>
+        <Button Name="save" Content="Save" HorizontalAlignment="Left" Margin="783,377,0,0" VerticalAlignment="Top" Width="76" Visibility="Hidden"/>
+        <Button Name="viewDraw" Content="View Draw" HorizontalAlignment="Left" Margin="783,402,0,0" VerticalAlignment="Top" Width="76" Visibility="Hidden"/>
+
+        <ComboBox Name="divSelect" IsEditable="True" Text="Select Division" HorizontalAlignment="Left" Margin="195,117,0,0" VerticalAlignment="Top" Height="23" Width="120" SelectionChanged="ComboBox_SelectionChanged" Visibility="Hidden">
+            <ComboBoxItem Content="Division 01"></ComboBoxItem>
+            <ComboBoxItem Content="Division 02"></ComboBoxItem>
+            <ComboBoxItem Content="Division 03"></ComboBoxItem>
+            <ComboBoxItem Content="Division 04"></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Name="roundSelect" IsEditable="True" Text="Select No. of Rounds" HorizontalAlignment="Left" Margin="333,117,0,0" VerticalAlignment="Top" Height="23" Width="139" SelectionChanged="ComboBox_SelectionChanged" Visibility="Hidden">
+            <ComboBoxItem Content="01"></ComboBoxItem>
+            <ComboBoxItem Content="02"></ComboBoxItem>
+            <ComboBoxItem Content="03"></ComboBoxItem>
+            <ComboBoxItem Content="04"></ComboBoxItem>
+            <ComboBoxItem Content="05"></ComboBoxItem>
+            <ComboBoxItem Content="06"></ComboBoxItem>
+            <ComboBoxItem Content="07"></ComboBoxItem>
+            <ComboBoxItem Content="08"></ComboBoxItem>
+            <ComboBoxItem Content="09"></ComboBoxItem>
+            <ComboBoxItem Content="10"></ComboBoxItem>
+            <ComboBoxItem Content="11"></ComboBoxItem>
+            <ComboBoxItem Content="12"></ComboBoxItem>
+        </ComboBox>
+
+        <TextBlock Name="startDate" HorizontalAlignment="Left" Margin="487,121,0,0" TextWrapping="Wrap" Text="Select start date:" FontFamily="Calibri" VerticalAlignment="Top" Visibility="Hidden"/>
+        <DatePicker Name="selectDate" Text="Select start date" HorizontalAlignment="Left" Margin="573,117,0,0" VerticalAlignment="Top" Height="23" Width="119" Visibility="Hidden"/>
+
+        <Button Name="createOk" Content="Ok" HorizontalAlignment="Left" Margin="714,117,0,0" VerticalAlignment="Top" Height="23" Width="30" Click="btnClickOk3" Visibility="Hidden"/>
+        <Button Name="createEdit" Content="Edit" HorizontalAlignment="Left" Margin="783,327,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
+
+
         
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
+
+
+
+
+
 
     </Grid>
 </Window>

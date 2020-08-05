@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,12 +16,8 @@ using System.Windows.Shapes;
 
 namespace EDSLprototype
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-       
         public MainWindow()
         {
             InitializeComponent();
@@ -36,7 +33,7 @@ namespace EDSLprototype
             Main.Content = new ResultsPage();
         }
 
-        void ButtonClick3(object sender, RoutedEventArgs e)
+        private void ButtonClick3(object sender, RoutedEventArgs e)
         {
             Main.Content = new ReportsPage();
         }
@@ -56,8 +53,6 @@ namespace EDSLprototype
             Main.Content = new PlayersPage();
         }
 
-        
-
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -67,9 +62,34 @@ namespace EDSLprototype
         {
 
         }
+        
+        private void EmptyText(object sender, RoutedEventArgs e)
+        {
+            CreateSeason.Text = String.Empty;
+        }
+        
+        private void btnClickOk1(object sender, RoutedEventArgs e)
+        {
+            divSelect.Visibility = Visibility.Visible;
+            roundSelect.Visibility = Visibility.Visible;
+            startDate.Visibility = Visibility.Visible;
+            selectDate.Visibility = Visibility.Visible;
+            createOk.Visibility = Visibility.Visible;
+        }
 
+        private void btnClickOk2(object sender, RoutedEventArgs e)
+        {
+            //existingEdit.Visibility = Visibility.Visible;
+            save.Visibility = Visibility.Visible;
+            viewDraw.Visibility = Visibility.Visible;
+        }
 
-
-        //CreateSeason.Text = String.Empty;
+        private void btnClickOk3(object sender, RoutedEventArgs e)
+        {
+            createEdit.Visibility = Visibility.Visible;
+            createDraw.Visibility = Visibility.Visible;
+            save.Visibility = Visibility.Visible;
+            viewDraw.Visibility = Visibility.Visible;
+        }
     }
 }
