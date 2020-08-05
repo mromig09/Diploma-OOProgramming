@@ -9,6 +9,61 @@
       Title="ResultsPage" Height="462.698" Width="877.248" Foreground="Black" Background="LightGray">
 
     <Grid>
+        <ComboBox HorizontalAlignment="Left" IsEditable="True" Text="Select Season" Margin="0,53,0,0" VerticalAlignment="Top" Height="23" Width="120">
+            <ComboBoxItem Content="Season 2020"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2019"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2018"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2017"></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox HorizontalAlignment="Left" IsEditable="True" Text="Select Division" Margin="0,80,0,0" VerticalAlignment="Top" Height="23" Width="120">
+            <ComboBoxItem Content="Division 01"></ComboBoxItem>
+            <ComboBoxItem Content="Division 02"></ComboBoxItem>
+            <ComboBoxItem Content="Division 03"></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox HorizontalAlignment="Left" IsEditable="True" Text="Select Round" Margin="0,107,0,0" VerticalAlignment="Top" Height="23" Width="120">
+            <ComboBoxItem Content="Round 01"></ComboBoxItem>
+            <ComboBoxItem Content="Round 02"></ComboBoxItem>
+            <ComboBoxItem Content="Round 03"></ComboBoxItem>
+            <ComboBoxItem Content="Round 04"></ComboBoxItem>
+            <ComboBoxItem Content="Round 05"></ComboBoxItem>
+            <ComboBoxItem Content="Round 06"></ComboBoxItem>
+            <ComboBoxItem Content="Round 07"></ComboBoxItem>
+            <ComboBoxItem Content="Round 08"></ComboBoxItem>
+            <ComboBoxItem Content="Round 09"></ComboBoxItem>
+            <ComboBoxItem Content="Round 10"></ComboBoxItem>
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Round Results" FontSize="28" VerticalAlignment="Top" Margin="0,-4,0,0"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="125,107,0,0" VerticalAlignment="Top" Height="23" Width="43" Click="btnClickOk"/>
+        <Button Name="updateLadder" Content="Update Ladder" HorizontalAlignment="Left" Margin="571,334,0,0" VerticalAlignment="Top" Width="87" Visibility="Hidden"/>
+
+        <ListBox Name="games" HorizontalAlignment="Left" Height="147" Margin="0,145,0,0" VerticalAlignment="Top" Width="190" Visibility="Hidden">
+            <ListBoxItem Content="Wantirna - Bye"></ListBoxItem>
+            <ListBoxItem Content="Mount Waverly v Oakleigh"></ListBoxItem>
+            <ListBoxItem Content="Scorsby v Ferntree Gully"></ListBoxItem>
+            <ListBoxItem Content="Mitcham v Murrumbeena"></ListBoxItem>
+            <ListBoxItem Content="Ringwood v Beaconsfield Upper"></ListBoxItem>
+            <ListBoxItem Content="Wonga Park v Belgrave"></ListBoxItem>
+            <ListBoxItem Content="Mount Evelyn v Lilydale"></ListBoxItem>
+        </ListBox>
+        <Button Name="viewresults" Content="View Results" HorizontalAlignment="Left" Margin="115,297,0,0" VerticalAlignment="Top" Width="75" Click="resultsView" Visibility="Hidden"/>
+
+        <ListBox Name="scores" HorizontalAlignment="Left" Height="147" Margin="195,145,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden">
+            <ListBoxItem Content="3 - 0" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem Content="1 - 1" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem Content="2 - 1" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem Content="1 - 1" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem Content="3 - 2" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem Content="4 - 0" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem Content="0 - 0" HorizontalAlignment="Center"></ListBoxItem>
+        </ListBox>
+        <Button Name="saveResults" Content="Save Results" HorizontalAlignment="Left" Margin="195,297,0,0" VerticalAlignment="Top" Width="75" Click="save" Visibility="Hidden"/>
+
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden"/>
+
+
+
     </Grid>
 </Page>

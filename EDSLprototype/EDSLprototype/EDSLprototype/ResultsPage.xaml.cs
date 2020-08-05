@@ -24,5 +24,23 @@ namespace EDSLprototype
         {
             InitializeComponent();
         }
+
+        private void btnClickOk(object sender, RoutedEventArgs e)
+        {
+            games.Visibility = Visibility.Visible;
+            viewresults.Visibility = Visibility.Visible;
+        }
+
+        private void resultsView(object sender, RoutedEventArgs e)
+        {
+            scores.Visibility = Visibility.Visible;
+            saveResults.Visibility = Visibility.Visible;
+        }
+
+        private void save(object sender, RoutedEventArgs e)
+        {
+            updateLadder.Visibility = Visibility.Visible;
+           
+        }
     }
 }

@@ -37,7 +37,6 @@
             <ComboBoxItem Content="Division 01"></ComboBoxItem>
             <ComboBoxItem Content="Division 02"></ComboBoxItem>
             <ComboBoxItem Content="Division 03"></ComboBoxItem>
-            <ComboBoxItem Content="Division 04"></ComboBoxItem>
         </ComboBox>
 
         <ComboBox Name="roundSelect" IsEditable="True" Text="Select No. of Rounds" HorizontalAlignment="Left" Margin="333,117,0,0" VerticalAlignment="Top" Height="23" Width="139" SelectionChanged="ComboBox_SelectionChanged" Visibility="Hidden">

@@ -91,8 +91,7 @@ namespace EDSLprototype
             createDraw.Visibility = Visibility.Visible;
             save.Visibility = Visibility.Visible;
             viewDraw.Visibility = Visibility.Visible;
-            listOfDates.Visibility = Visibility.Visible;
-            
+            listOfDates.Visibility = Visibility.Visible;        
         }
 
         private void EditDate(object sender, RoutedEventArgs e)
