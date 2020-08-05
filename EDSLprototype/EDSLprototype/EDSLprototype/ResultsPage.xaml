@@ -39,19 +39,33 @@
         <Button Content="Ok" HorizontalAlignment="Left" Margin="125,107,0,0" VerticalAlignment="Top" Height="23" Width="43" Click="btnClickOk"/>
         <Button Name="updateLadder" Content="Update Ladder" HorizontalAlignment="Left" Margin="571,334,0,0" VerticalAlignment="Top" Width="87" Visibility="Hidden"/>
 
-        <ListBox Name="games" HorizontalAlignment="Left" Height="147" Margin="0,145,0,0" VerticalAlignment="Top" Width="190" Visibility="Hidden">
-            <ListBoxItem Content="Wantirna - Bye"></ListBoxItem>
-            <ListBoxItem Content="Mount Waverly v Oakleigh"></ListBoxItem>
-            <ListBoxItem Content="Scorsby v Ferntree Gully"></ListBoxItem>
-            <ListBoxItem Content="Mitcham v Murrumbeena"></ListBoxItem>
-            <ListBoxItem Content="Ringwood v Beaconsfield Upper"></ListBoxItem>
-            <ListBoxItem Content="Wonga Park v Belgrave"></ListBoxItem>
-            <ListBoxItem Content="Mount Evelyn v Lilydale"></ListBoxItem>
-        </ListBox>
-        <Button Name="viewresults" Content="View Results" HorizontalAlignment="Left" Margin="115,297,0,0" VerticalAlignment="Top" Width="75" Click="resultsView" Visibility="Hidden"/>
+        <TextBlock Name="home" HorizontalAlignment="Left" Margin="0,150,0,0" TextWrapping="Wrap" Text="Home Team" FontFamily="Calibri" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBlock Name="away" HorizontalAlignment="Left" Margin="101,150,0,0" TextWrapping="Wrap" Text="Away Team" FontFamily="Calibri" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBlock Name="score" HorizontalAlignment="Left" Margin="228,150,0,0" TextWrapping="Wrap" Text="Score" FontFamily="Calibri" VerticalAlignment="Top" Visibility="Hidden"/>
 
-        <ListBox Name="scores" HorizontalAlignment="Left" Height="147" Margin="195,145,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden">
-            <ListBoxItem Content="3 - 0" HorizontalAlignment="Center"></ListBoxItem>
+        <ListBox Name="gamesHome" HorizontalAlignment="Left" Height="147" Margin="0,167,0,0" VerticalAlignment="Top" Width="96" Visibility="Hidden">
+            <ListBoxItem Content="Wantirna"></ListBoxItem>
+            <ListBoxItem Content="Mount Waverly"></ListBoxItem>
+            <ListBoxItem Content="Scorsby"></ListBoxItem>
+            <ListBoxItem Content="Mitcham"></ListBoxItem>
+            <ListBoxItem Content="Ringwood"></ListBoxItem>
+            <ListBoxItem Content="Wonga Park"></ListBoxItem>
+            <ListBoxItem Content="Mount Evelyn"></ListBoxItem>
+        </ListBox>
+
+        <ListBox Name="gamesAway" HorizontalAlignment="Left" Height="147" Margin="101,167,0,0" VerticalAlignment="Top" Width="122" Visibility="Hidden">
+            <ListBoxItem Content="-"></ListBoxItem>
+            <ListBoxItem Content="Oakleigh"></ListBoxItem>
+            <ListBoxItem Content="Ferntree Gully"></ListBoxItem>
+            <ListBoxItem Content="Murrumbeena"></ListBoxItem>
+            <ListBoxItem Content="Beaconsfield Upper"></ListBoxItem>
+            <ListBoxItem Content="Belgrave"></ListBoxItem>
+            <ListBoxItem Content="Lilydale"></ListBoxItem>
+        </ListBox>
+        <Button Name="viewresults" Content="View Results" HorizontalAlignment="Left" Margin="148,319,0,0" VerticalAlignment="Top" Width="75" Click="resultsView" Visibility="Hidden"/>
+
+        <ListBox Name="scores" HorizontalAlignment="Left" Height="147" Margin="228,167,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden">
+            <ListBoxItem Content="Bye" HorizontalAlignment="Center"></ListBoxItem>
             <ListBoxItem Content="1 - 1" HorizontalAlignment="Center"></ListBoxItem>
             <ListBoxItem Content="2 - 1" HorizontalAlignment="Center"></ListBoxItem>
             <ListBoxItem Content="1 - 1" HorizontalAlignment="Center"></ListBoxItem>
@@ -59,9 +73,10 @@
             <ListBoxItem Content="4 - 0" HorizontalAlignment="Center"></ListBoxItem>
             <ListBoxItem Content="0 - 0" HorizontalAlignment="Center"></ListBoxItem>
         </ListBox>
-        <Button Name="saveResults" Content="Save Results" HorizontalAlignment="Left" Margin="195,297,0,0" VerticalAlignment="Top" Width="75" Click="save" Visibility="Hidden"/>
+        <Button Name="saveResults" Content="Save Results" HorizontalAlignment="Left" Margin="228,319,0,0" VerticalAlignment="Top" Width="75" Click="save" Visibility="Hidden"/>
 
-        <Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden"/>
+
+        <!--<Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden"/>-->
 
 
 

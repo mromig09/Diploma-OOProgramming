@@ -27,14 +27,19 @@ namespace EDSLprototype
 
         private void btnClickOk(object sender, RoutedEventArgs e)
         {
-            games.Visibility = Visibility.Visible;
+            gamesHome.Visibility = Visibility.Visible;
+            gamesAway.Visibility = Visibility.Visible;
             viewresults.Visibility = Visibility.Visible;
+            home.Visibility = Visibility.Visible;
+            away.Visibility = Visibility.Visible;
+            score.Visibility = Visibility.Visible;
         }
 
         private void resultsView(object sender, RoutedEventArgs e)
         {
             scores.Visibility = Visibility.Visible;
             saveResults.Visibility = Visibility.Visible;
+            scores.Visibility = Visibility.Visible;
         }
 
         private void save(object sender, RoutedEventArgs e)
