@@ -82,6 +82,7 @@ namespace EDSLprototype
             //existingEdit.Visibility = Visibility.Visible;
             save.Visibility = Visibility.Visible;
             viewDraw.Visibility = Visibility.Visible;
+
         }
 
         private void btnClickOk3(object sender, RoutedEventArgs e)
@@ -90,6 +91,19 @@ namespace EDSLprototype
             createDraw.Visibility = Visibility.Visible;
             save.Visibility = Visibility.Visible;
             viewDraw.Visibility = Visibility.Visible;
+            listOfDates.Visibility = Visibility.Visible;
+            
+        }
+
+        private void EditDate(object sender, RoutedEventArgs e)
+        {
+            deleteListOfDates.Visibility = Visibility.Visible;
+            remove.Visibility = Visibility.Visible;
+        }
+
+        private void removeData(object sender, RoutedEventArgs e)
+        {
+            deleteListOfDates.Items.Remove(deleteListOfDates.SelectedItem);
         }
     }
 }

@@ -59,10 +59,35 @@
         <DatePicker Name="selectDate" Text="Select start date" HorizontalAlignment="Left" Margin="573,117,0,0" VerticalAlignment="Top" Height="23" Width="119" Visibility="Hidden"/>
 
         <Button Name="createOk" Content="Ok" HorizontalAlignment="Left" Margin="714,117,0,0" VerticalAlignment="Top" Height="23" Width="30" Click="btnClickOk3" Visibility="Hidden"/>
-        <Button Name="createEdit" Content="Edit" HorizontalAlignment="Left" Margin="783,327,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
+        <Button Name="createEdit" Content="Edit" HorizontalAlignment="Left" Margin="375,348,0,0" VerticalAlignment="Top" Width="75" Click="EditDate" Visibility="Hidden"/>
+        <ListBox Name="listOfDates" HorizontalAlignment="Left" Height="204" Margin="195,164,0,0" VerticalAlignment="Top" Width="175" Visibility="Hidden">
+            <ListBoxItem Content="03/07/2020"></ListBoxItem>
+            <ListBoxItem Content="10/07/2020"></ListBoxItem>
+            <ListBoxItem Content="17/07/2020"></ListBoxItem>
+            <ListBoxItem Content="24/07/2020"></ListBoxItem>
+            <ListBoxItem Content="31/07/2020"></ListBoxItem>
+            <ListBoxItem Content="07/08/2020"></ListBoxItem>
+            <ListBoxItem Content="14/08/2020"></ListBoxItem>
+            <ListBoxItem Content="21/08/2020"></ListBoxItem>
+            <ListBoxItem Content="28/08/2020"></ListBoxItem>
+            <ListBoxItem Content="04/09/2020"></ListBoxItem>
+        </ListBox>
+
+        <ListBox Name="deleteListOfDates" HorizontalAlignment="Left" Height="204" Margin="464,164,0,0" VerticalAlignment="Top" Width="175" Visibility="Hidden">
+            <ListBoxItem Content="03/07/2020"></ListBoxItem>
+            <ListBoxItem Content="10/07/2020"></ListBoxItem>
+            <ListBoxItem Content="17/07/2020"></ListBoxItem>
+            <ListBoxItem Content="24/07/2020"></ListBoxItem>
+            <ListBoxItem Content="31/07/2020"></ListBoxItem>
+            <ListBoxItem Content="07/08/2020"></ListBoxItem>
+            <ListBoxItem Content="14/08/2020"></ListBoxItem>
+            <ListBoxItem Content="21/08/2020"></ListBoxItem>
+            <ListBoxItem Content="28/08/2020"></ListBoxItem>
+            <ListBoxItem Content="04/09/2020"></ListBoxItem>
+        </ListBox>
+        <Button Name="remove" Content="Delete" HorizontalAlignment="Left" Margin="644,348,0,0" VerticalAlignment="Top" Width="75" Click="removeData" Visibility="Hidden"/>
 
 
-        
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="360" Margin="195,62,0,0" VerticalAlignment="Top" Width="664" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
 
 
